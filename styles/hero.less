@@ -1,0 +1,103 @@
+// _hero.less
+
+.hero {
+  position:    relative;
+  display:     flex;
+  align-items: center;
+  height:      100vh;
+  padding:     0 4rem;
+  background:  @negro;
+  overflow:    hidden;
+
+  &__contenido {
+    position:    relative;
+    z-index:     2;
+    width:       50%;
+    max-width:   560px;
+    padding-top: 4rem;
+  }
+
+  &__equipo {
+    font-size:      0.85rem;
+    font-weight:    600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:          @rojo;
+    margin-bottom:  1rem;
+  }
+
+  &__nombre {
+    font-family:    @font-titulo;
+    font-size:      1.4rem;
+    letter-spacing: 5px;
+    color:          @gris;
+    margin-bottom:  0.2rem;
+  }
+
+  &__alias {
+    font-family:    @font-titulo;
+    font-size:      7rem;
+    line-height:    1;
+    color:          @blanco;
+    margin-bottom:  1.5rem;
+    letter-spacing: 4px;
+
+    // Acento rojo en la F
+    span { color: @rojo; }
+  }
+
+  &__desc {
+    font-size:     1rem;
+    color:         @gris;
+    margin-bottom: 2rem;
+    line-height:   1.7;
+  }
+
+  // Barra de estadísticas
+  &__stats {
+    display:       flex;
+    gap:           2.5rem;
+    margin-bottom: 2.5rem;
+    padding:       1.5rem 0;
+    border-top:    1px solid @gris-borde;
+    border-bottom: 1px solid @gris-borde;
+  }
+
+  &__stat {
+    display:        flex;
+    flex-direction: column;
+  }
+
+  &__stat-num {
+    font-family:  @font-titulo;
+    font-size:    2.4rem;
+    color:        @rojo;
+    line-height:  1;
+  }
+
+  &__stat-label {
+    font-size:      0.8rem;
+    font-weight:    600;
+    color:          @gris;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top:     0.2rem;
+  }
+
+  // Imagen — ocupa todo el lado derecho hasta los bordes del hero
+  &__imagen-wrap {
+    position:  absolute;
+    top:       0;
+    right:     0;
+    width:     50%;
+    height:    100%;
+    overflow:  hidden;
+  }
+
+  &__imagen {
+    width:           100%;
+    height:          100%;
+    object-fit:      cover;
+    object-position: center top;
+  }
+}

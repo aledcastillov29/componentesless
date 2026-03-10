@@ -1,0 +1,81 @@
+// _footer.less
+
+.footer {
+  background:  @negro;
+  border-top:  2px solid @rojo;
+  padding:     4rem 4rem 2rem;
+
+  &__top {
+    display:               grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap:                   3rem;
+    max-width:             1100px;
+    margin:                0 auto 3rem;
+  }
+
+  &__marca {
+    &-nombre {
+      font-family:    @font-titulo;
+      font-size:      2.5rem;
+      letter-spacing: 5px;
+      color:          @rojo;
+      line-height:    1;
+      margin-bottom:  0.4rem;
+    }
+
+    &-sub {
+      font-size:   0.85rem;
+      color:       @gris;
+      font-weight: 600;
+      margin:      0;
+    }
+  }
+
+  &__col {
+    h4 {
+      font-family:    @font-titulo;
+      font-size:      1rem;
+      letter-spacing: 2px;
+      color:          @blanco;
+      margin-bottom:  1rem;
+      padding-bottom: 0.5rem;
+      border-bottom:  1px solid @gris-borde;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        a {
+          color:      @gris;
+          font-size:  0.9rem;
+          transition: @transicion;
+
+          &:hover { color: @rojo; }
+        }
+      }
+    }
+
+    p {
+      color:         @gris;
+      font-size:     0.88rem;
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  &__bottom {
+    text-align:  center;
+    padding-top: 2rem;
+    border-top:  1px solid @gris-borde;
+    max-width:   1100px;
+    margin:      0 auto;
+
+    p {
+      color:     @gris;
+      font-size: 0.85rem;
+      margin:    0;
+    }
+  }
+}

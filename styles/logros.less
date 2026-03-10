@@ -1,0 +1,58 @@
+// _logros.less
+
+.logros {
+  padding:    5rem 4rem;
+  background: @negro2;
+}
+
+.cards {
+  display:               grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:                   1.5rem;
+  max-width:             1100px;
+  margin:                0 auto;
+}
+
+.card {
+  background:    @negro;
+  border:        1px solid @gris-borde;
+  border-top:    3px solid @rojo;
+  border-radius: @radio;
+  padding:       1.8rem;
+  transition:    @transicion;
+
+  &:hover {
+    border-color:  @rojo;
+    background:    lighten(@negro, 4%);
+  }
+
+  &__icono {
+    font-size:     2rem;
+    display:       block;
+    margin-bottom: 0.8rem;
+  }
+
+  &__titulo {
+    font-family:   @font-titulo;
+    font-size:     1.3rem;
+    letter-spacing: 1px;
+    color:         @blanco;
+    margin-bottom: 0.3rem;
+  }
+
+  &__anio {
+    font-size:     0.8rem;
+    font-weight:   600;
+    color:         @rojo;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__desc {
+    font-size:   0.95rem;
+    color:       @gris;
+    line-height: 1.6;
+    margin:      0;
+  }
+}
